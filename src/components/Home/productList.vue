@@ -1,4 +1,8 @@
-<!-- ProductList.vue -->
+<script setup>
+import Product from "./Product.vue";
+
+</script>
+
 <template>
   <div class="row">
     <div class="col-lg-3 col" v-for="produto in searchResults">
@@ -6,20 +10,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import Product from "./Product.vue";
-
-export default {
-  components: {
-    Product,
-  },
-  props: {
-    searchResults: Array, // Receberá a lista de resultados como propriedade
-  },
-};
-</script>
-
-<style scoped>
-/* Estilos específicos para ProductList */
-</style>
