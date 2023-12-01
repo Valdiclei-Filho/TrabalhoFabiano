@@ -1,8 +1,7 @@
 <script setup>
 import axios from "axios";
 import images from "../components/Product/images.vue";
-import info from "../components/Product/info.vue";
-import buttons from "../components/Product/buttons.vue";
+import info from "../components/product/info.vue";
 import { ref, defineProps } from "vue";
 
 const props = defineProps({
